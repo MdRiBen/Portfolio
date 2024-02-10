@@ -40,10 +40,10 @@ function handleProfilePicture(){
     const windowidth =window.innerWidth
 
     if (windowidth<=998){
-        profileImage.src ="/images/my-picture.png"
+        profileImage.src ="images/my-picture.png"
         profileImage.style .backgroundColor ="transparent"
     }else{
-        profileImage.src ="/images/about-me.png"
+        profileImage.src ="images/about-me.png"
         profileImage.style .backgroundColor ="var(--lightColor)"
     }
 }
