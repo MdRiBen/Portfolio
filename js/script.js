@@ -32,25 +32,34 @@ function handleMenu(){
 
 
 
+
+
 // handle profile image
 
-const profileImage =document.getElementById("about-profile")
+const profileImage = document.getElementById("about-profile");
 
-function handleProfilePicture(){
-    const windowidth =window.innerWidth
+function handleProfilePicture() {
+    const windowWidth = window.innerWidth;
 
-    if (windowidth<=998){
-        profileImage.src ="images/my-picture.png"
-        profileImage.style .backgroundColor ="transparent"
-    }else{
-        profileImage.src ="images/about-me.png"
-        profileImage.style .backgroundColor ="var(--lightColor)"
+    if (windowWidth <= 998) {
+        profileImage.src = "images/my-picture.png";
+        profileImage.style.backgroundColor = "transparent";
+    } else {
+        profileImage.src = "images/about-me.png";
+        profileImage.style.backgroundColor = "var(--lightColor)";
     }
 }
 
-window.addEventListener("resize",()=>{
-    handleProfilePicture()
-})
+// Debounce the resize event to optimize performance
+let resizeTimer;
+
+window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(handleProfilePicture, 200); // Adjust debounce time as needed
+});
+
+// Call handleProfilePicture() initially to set the correct image based on window width
+handleProfilePicture();
 
 
 // Smooth scrolling for anchor links
