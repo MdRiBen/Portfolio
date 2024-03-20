@@ -36,17 +36,15 @@ function handleMenu(){
 
 // handle profile image
 
-const profileImage = document.getElementById("about-profile");
+const bgImage = document.getElementById("home");
 
 function handleProfilePicture() {
     const windowWidth = window.innerWidth;
 
     if (windowWidth <= 998) {
-        profileImage.src = "images/my-picture.png";
-        profileImage.style.backgroundColor = "transparent";
+        bgImage.style.backgroundImage = 'none';
     } else {
-        profileImage.src = "images/about-me.png";
-        profileImage.style.backgroundColor = "var(--lightColor)";
+        bgImage.style.backgroundImage = 'url(../images/bg-image.jpg)';        
     }
 }
 

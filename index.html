@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-MOHAMED RIDA BEN TOHAMI</title>
-    <meta name="description" content="Portfolio of Mohamed Rida Ben Touhami, student data engeneering">
-    <meta name= "keywords" content="Ben Touhami ,Mohamed Rida, Data Engeneering ,Ensah,Data Engeneering Portfolio">
+    <meta name="description" content="Portfolio of Mohamed Rida Ben Touhami, student data engineering">
+    <meta name= "keywords" content="Ben Touhami ,Mohamed Rida, Data Engineering ,Ensah,Data Engineering Portfolio">
     <link rel="stylesheet" href="css/style.css">
     <!-- choose the portfolio icon -->
     <link rel="stylesheet" href="#">
 
     <!-- fonts -->
-
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -26,13 +26,14 @@
 
     <!-- navigation bar -->
     <nav>
+      <img src="images/data3d-icon.png" alt="data-icon" style ="width:2.5rem">
         <h2>Ben Touhami <span>Mohamed Rida</span></h2>
         <ul id="actions">
             <li class="menu-comp"><a href="#home" >home</a></li>
             <li class="menu-comp"><a href="#about-me" >about me</a></li>
             <li class="menu-comp"><a href="#skills" >skills</a></li>
             <li class="menu-comp"><a href="#projects" >projects</a></li>
-            <li class="menu-comp"><a href="#certificats" >certificats</a></li>
+            <li class="menu-comp"><a href="#certificats" >certificates</a></li>
             <li class="menu-comp"><a href="#contacts" >contacts</a></li>
         </ul>
         <button id="menu">
@@ -49,25 +50,22 @@
         <div class="container-texts">
                 <h4>Hello, my Name is</h4>
                 <h1>Mohamed Rida <br><span class="family-name">Ben Touhami</span></h1>
-                <h3>Data <span>Engeneering</span> Student</h3>
+                <h3>Data <span class="wonderful-color">Engineering</span> Student</h3>
                 
                 <div download class="btn"><a href="downloads/CV.pdf" download="BenTouhami-Mohamed-rida.pdf">Download CV</a></div>
         </div>
-        <div class="container-images">
-            <img src="images/background-image.png" class="background-image" alt="background-picture">
-            <img src="images/my-picture.png" class="profil-picture" alt="profil-picture">
-        </div>
+        
     </div>
   </section>
 
     <!-- about section -->
     <section class="about-me" id ="about-me">
       <div class="container-images">
-        <img src="" alt="about-me" id="about-profile">
+        <img src="images/my-picture.png" alt="about-me" id="about-profile">
       </div>
     <div class="container-texts">
        <h1>About <span>Me</span></h1>
-       <h5>Data <span>Engeneering</span></h5>
+       <h5>Data <span>Engineering</span></h5>
        <p> Enthusiastic data engineering student at the
         National School of Applied Sciences of Al
         Hoceima, driven by a passion for IT and data.
@@ -87,7 +85,9 @@
 
   <!-- skills section -->
   <section class="skills" id= "skills">
-  <h1>Our <span>Skills</span></h1>
+    <img src="images/skills-icon.png" alt="skills-icon" style="width:5%;margin-left: 47%;margin-bottom: 1%;">
+
+   <h1> Our <span>Skills</span></h1>
     <div class="box">
 
       <!--DataBases-->
@@ -166,14 +166,25 @@
         <div class="icon"><img src="images/Docker.png" alt="Docker"></div> 
         <div>Docker</div>
       </div>
-
-      <div calss="skill"style="margin-top:35px">
-        <div class="icon"><img src="images/webSraping.png" alt="webSraping"></div> 
-        <div>webSraping<br><span style="font-size: 12px;">selenium<br>BeautifulSoup</span></div>
+      
+      <div calss="skill" >
+        <div class="icon"><img src="images/airlow-img.png" alt="airflow"></div> 
+        <div>airflow</div>
       </div>
       
+      <div calss="skill">
+        <div class="icon"><img src="images/kafka-img.png" alt="kafka"></div> 
+        <div>kafka</div>
       </div>
-
+      
+      
+            <div calss="skill"style="margin-top:35px">
+              <div class="icon"><img src="images/webSraping.png" alt="webSraping"></div> 
+              <div>webSraping<br><span style="font-size: 12px;">selenium<br>BeautifulSoup</span></div>
+            </div>
+      
+    </div>
+    
   
     </div>
       <!--Programming Language-->
@@ -280,6 +291,8 @@
 
 <!-- projects section -->
 <section class="projects" id="projects">
+  <img src="images/projects-icon.png" alt="skills-icon" style="width:5%;margin-left: 47%;margin-bottom: 1%;">
+
   <h1>proj<span>ects</span></h1>
   <div class="box">
 
@@ -290,7 +303,7 @@
     <div class="card">
 
       <div class="project-presentation">
-        <img src="images/ml.PNG" alt="ml-project" style="width:90%">
+        <img class="more-scale" src="images/ml.PNG" alt="ml-project" style="width:90%">
       </div>
   
       <h3 class="project-title">
@@ -396,18 +409,20 @@
 <!-- certificates section -->
 
 <section class="certificats" id="certificats">
-<h1>certific<span>ats</span></h1>
+<h1>certi<span>fica</span>tes</h1>
 
 <div class="box">
   <div class="certif"><a href="https://www.credly.com/badges/8097fa8d-b448-440f-be05-3c0ceff3b8ac" target="_blank"><img src="images/big-data-badge.png" alt="big-data-badge"></a></div>
   <div class="certif"><a href="https://www.credly.com/badges/a8dec467-14fd-4a52-899e-df75d8d7cd9a" target="_blank"><img src="images/dw-badge.png" alt="dw-badge"></a></div>
   <div class="certif"><a href="https://www.credly.com/badges/9428e112-aaf2-4543-b02a-7f461f9dce85" target="_blank"><img src="images/no-sql-badge.png" alt="no-sql-badge"></a></div>
+  <div class="certif"><a href="https://www.credly.com/badges/0be7115e-6e17-486f-9fed-463021bd693e" target="_blank"><img src="images/etl-airflow-certif.jpg" alt="no-sql-badge"></a></div>
   
 </div>
 </section>
 
 
 <!-- contact section -->
+
 
 <section class="contacts" id="contacts">
 
@@ -421,7 +436,7 @@
     </div>
     <div class="phone-number">
       <img src="images/phone.png" alt="phone">
-      <div>0650421062</div>
+      <div>+212650421062</div>
     </div>
     <div class="Adress">
       <img src="images/location.png" alt="location">
