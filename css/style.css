@@ -1021,6 +1021,9 @@ footer img:hover{
     .home nav ul li a{
         font-size: 1rem;
     }
+    .about-me .container-images{
+        margin-left: 6rem;
+    }
     .projects .card a{
         font-size: 90%;
 
