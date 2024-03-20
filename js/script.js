@@ -44,7 +44,7 @@ function handleProfilePicture() {
     if (windowWidth <= 998) {
         bgImage.style.backgroundImage = 'none';
     } else {
-        bgImage.style.backgroundImage = 'url(../images/bg-image.jpg)';        
+        bgImage.style.backgroundImage = 'url(images/bg-image.jpg)';        
     }
 }
 
