@@ -41,7 +41,7 @@ const bgImage = document.getElementById("home");
 function handleProfilePicture() {
     const windowWidth = window.innerWidth;
 
-    if (windowWidth <= 998) {
+    if (windowWidth <= 1200) {
         bgImage.style.backgroundImage = 'none';
     } else {
         bgImage.style.backgroundImage = 'url(images/bg-image.jpg)';        

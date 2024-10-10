@@ -19,6 +19,7 @@
 
 
     <body>
+      
  
 
   <!-- home section -->
@@ -64,7 +65,7 @@
     <!-- about section -->
     <section class="about-me" id ="about-me">
       <div class="container-images">
-        <img src="images/my-picture.png" alt="about-me" id="about-profile">
+        <img src="images/my-picture.png" style ="border-radius: 10%;" alt="about-me" id="about-profile">
       </div>
     <div class="container-texts">
        <h1>About <span>Me</span></h1>
@@ -87,7 +88,7 @@
 
   <!-- skills section -->
   <section class="skills" id= "skills">
-    <img src="images/skills-icon.png" alt="skills-icon" style="width:4rem;margin-left: 47%;margin-bottom: 1%;">
+    <img src="images/skills-icon.png" alt="skills-icon" class="icons-sections" style="width: 4rem;">
 
    <h1> My <span>Skills</span></h1>
     <div class="box">
@@ -141,10 +142,10 @@
     </div> 
 
 
-    <!--Big Data-->
+    <!--Big Data & BI Tools-->
     <div class="card">
       <i class="fa-solid fa-sitemap"></i>
-      <h3>Big Data</h3>
+      <h3>Big Data & BI Tools</h3>
 
       <div class="content">
 
@@ -179,6 +180,11 @@
         <div>kafka</div>
       </div>
       
+      <div calss="skill">
+        <div class="icon"><img src="images/powerBi.png" alt="powerBi"></div> 
+        <div>Power BI</div>
+      </div>
+      
       
             <div calss="skill"style="margin-top:35px">
               <div class="icon"><img src="images/webSraping.png" alt="webSraping"></div> 
@@ -189,10 +195,10 @@
     
   
     </div>
-      <!--Programming Language-->
+      <!--Programming Language & Frameworks-->
       <div class="card">
         <i class="fa-solid fa-code"></i>
-        <h3>Programming Language</h3>
+        <h3>Programming Language & Frameworks</h3>
 
         <div class="content">
 
@@ -217,6 +223,16 @@
         <div calss="skill">
           <div class="icon"><img src="images/java.png" alt="java"> </div>
           <div>Java</div>
+        </div>
+          
+        <div calss="skill">
+          <div class="icon"><img src="images/spring-boot.png" alt="spring-boot"> </div>
+          <div>Spring Boot</div>
+        </div>
+          
+        <div calss="skill">
+          <div class="icon"><img src="images/react.png" alt="react"> </div>
+          <div>React</div>
         </div>
         
         <div calss="skill">
@@ -293,14 +309,42 @@
 
 <!-- projects section -->
 <section class="projects" id="projects">
-  <img src="images/projects-icon.png" alt="skills-icon" style="width:4rem;margin-left: 47%;margin-bottom: 1%;">
+  <img src="images/projects-icon.png" alt="skills-icon" class="icons-sections" >
 
-  <h1>proj<span>ects</span></h1>
+  <h1> Per<span>sona</span>l proj<span>ects</span></h1>
   <div class="box">
 
 
 
 
+    <!-- Patent Analysis Project -->
+    <div class="card">
+
+      <div class="project-presentation">
+        <img class="more-scale" src="images/patent-analysis.PNG" alt="patent-analysis" style="width:90%">
+      </div>
+  
+      <h3 class="project-title">
+        Patent Analysis Project
+      
+      </h3>
+  
+      <div class="project-description">
+        <p>
+            Create a real estate price prediction app featuring hybrid regression.
+            The development includes web scraping, exploratory data analysis
+            (EDA), and model optimization using StackingRegressor model and
+            integrate a recommendation system for similar apartments Enhance
+            user experience by deploying it as a web application with Flask,
+            HTML, CSS, and JS.
+       </p>
+      </div>
+      <a href="https://github.com/BenTouhami-MR/ApartementPricePredictionInMorocco
+      " class="btn" target="_blank">More Details</a>
+
+
+    </div>
+    
     <!-- machine leanring (hybride regression) project -->
     <div class="card">
 

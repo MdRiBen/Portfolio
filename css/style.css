@@ -306,7 +306,7 @@ nav ul li:hover{
 .home .container-images{
     
   position: relative;
-  bottom: 22%;
+  /* bottom: 22%; */
 }
 
 .home .container-images .background-image{
@@ -387,7 +387,7 @@ background-color: var(--primaryColor);
 .about-me .container-images{
     width:30%;
     position:relative;
-    bottom: 180px;
+    /* bottom: 180px; */
     transition: .8s;
     
 }
@@ -498,7 +498,7 @@ transform: translateX(0.5rem);
     grid-template-rows: repeat(3,30%);
     justify-content: center;
     align-items: center;
-    gap:1.8rem;
+    gap:1.4rem;
     font-size: .7rem;
     font-weight: bold;
 }
@@ -735,6 +735,16 @@ footer img:hover{
 }
 
 
+/*========================================
+        ==========  Icons Style ===========
+        ======================================*/
+
+.icons-sections{
+    width:4rem;
+    margin-left: 47%;
+    margin-bottom: 1%;
+}
+
 
 /*========================================
         ==========  MEDIA QUERIES ===========
@@ -744,6 +754,9 @@ footer img:hover{
 
 
 @media (max-width:800px) {
+    .home{
+        height: 90vh;
+    }
     #menu.is-active > :nth-child(1){
         transform:translate(0px, 9px) rotate(45deg);
     }
@@ -793,7 +806,11 @@ footer img:hover{
 
 
 @media (min-width:800px) and (max-width:998px) {
-
+    .home .content{
+        position: relative;
+    bottom: 250px;
+    padding: 116px;
+    }
 
             .home .container-images{
                 height: 50%;
@@ -834,6 +851,9 @@ footer img:hover{
 
 
 @media screen and (max-width:1250px){
+    .container-texts{
+        margin: auto;
+    }
     .home .container-images{
         height: 70%;
     }
@@ -1002,11 +1022,17 @@ footer img:hover{
 
 
 @media (max-width:450px){
+    .icons-sections{
+        margin-left:40%;
+    }
+
     
     .home h1{
         font-size:2rem;
         line-height: 3rem;
     }
+
+  
     
     .home h3{
         font-size: 1.5rem;
@@ -1022,8 +1048,19 @@ footer img:hover{
         width: 80vw;
     }
 
+
     .home nav ul li a{
         font-size: 1rem;
+    }
+    .about-me{
+        margin-top: 4rem;
+    }
+    .about-me .container-texts{
+        position: relative;
+    left: -20px;
+    }
+    .about-me .container-texts h1{
+        margin-right: 6rem;
     }
     .about-me .container-images{
         margin-left: 6rem;
@@ -1056,4 +1093,16 @@ footer img:hover{
         margin-left :auto;
         margin-right :auto;
     }
+}
+
+@media (max-width:380px){
+  
+    #about-profile{
+        margin-top: 50px;
+        position: relative;
+        left: -16px;
+    }    
+
+  
+    
 }
